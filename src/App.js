@@ -41,21 +41,21 @@ const App = () => {
   }
   return (
     <div className="App">
-      <div id="quote-box" class="d-flex align-items-center justify-content-center mx-auto" style={{"height": '50em', width:'100%', background: `rgba(${red}, ${green}, ${blue})`}}>
-        <div id="text" class="card w-75 h-auto p-2 border rounded">
-          <span id="quote" class="mt-5 fs-4 fw-normal">
+      <div id="quote-box" className="d-flex align-items-center justify-content-center mx-auto" style={{"height": '50em', width:'100%', background: `rgba(${red}, ${green}, ${blue})`}}>
+        <div id="text" className="card w-75 h-auto p-2 border rounded">
+          <span id="quote" className="mt-5 fs-4 fw-normal">
           {quote ? quote : ''}
           </span>
           <br />
-          <div class="d-flex justify-content-end">
-            <span id="author" class="w-25 fs-5 fw-light">{author? author : ''}</span>
+          <div className="d-flex justify-content-end">
+            <span id="author" className="w-25 fs-5 fw-light">{author? author : ''}</span>
           </div>
           <br />
-          <div class="text-center">
-            <button class="btn w-25" type="submit" id="new-quote" onClick={fetchQuote} style={{'background': `rgba(${red}, ${green}, ${blue})`, color: 'white'}}>
+          <div className="text-center">
+            <button className="btn w-25" type="submit" id="new-quote" onClick={fetchQuote} style={{'background': `rgba(${red}, ${green}, ${blue})`, color: 'white'}}>
               Next Quote
             </button>
-            <span id="tweet-btn" class="m-2">
+            <span id="tweet-btn" className="m-2">
               <a id="tweet-quote" target="_blank" rel="noreferrer" href="https://twitter.com/intent/tweet">
                 <TwitterLogo className="border rounded p-1" style={{'width': '2.5rem', 'height': '2.5rem', 'fill': 'white', background: `rgba(${red}, ${green}, ${blue})`}}/>
               </a>
